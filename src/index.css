@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  width: 100vw;
+  height: auto;
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+section {
+  display: block;
+  justify-content: center;
+}
+
+.navbar {
+  font-weight: 900;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 30% 30%;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 6px 4px;
+}
+
+.active {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+
+  padding: 4px 0;
+  color: rgb(143, 28, 28);
+  transition: 0.2s ease;
+  border-radius: 10px;
+  border-radius: 13px;
+}
+
+.navbar ul {
+  padding: 7px 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px 0 grey;
+}
+
+.navbar ul li {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 0 10px;
+  transition: all 0.4s ease;
+  font-size: 1.2rem;
+}
+
+.navbar button {
+  background-color: black;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 13px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80vh;
+}
+
+.container h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.contactbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.contactbuttons button {
+  padding: 10px 20px;
+  border-radius: 13px;
+  border: 0;
+  box-shadow: 0 0 30px 0 grey;
+}
+
+.div2 {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  height: 100vh;
+}
+
+.div2 h1 {
+  animation: zoomEffect 6s ease infinite;
+  margin-bottom: 3rem;
+}
+
+.div2 img:hover {
+  animation: zoomEffect 6s ease infinite;
+}
+
+@keyframes zoomEffect {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.gamestoplay {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem;
+  padding: 0.9rem;
+  background-color: #ffffffd5;
+  color: black;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 0 gray;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.1rem;
+  margin-bottom: 4rem;
+}
+
+.gamestoplay img {
+  width: 24rem;
+  border-radius: 50%;
+}
+.gamestoplay img:hover {
+  border-radius: 14px;
+  transition: 1s ease;
+}
+.gamestoplay:hover {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 14px;
+  box-shadow: 0 0 60px 0 rgb(135, 135, 135);
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+.textonvideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 100px;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(185, 185, 185, 0.361);
+  padding: 20px;
+  box-shadow: 0 0 60px 0 grey;
+  border: 2px solid white;
+}
