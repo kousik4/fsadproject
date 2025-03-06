@@ -1,6 +1,8 @@
 import React from "react";
 import homepagebackgroundimg from "../assets/homepagemainimg.png";
 import homepagediv2img from "../assets/ homepagediv2img.png";
+import playbigwinbig from "../assets/playbigwinbig.png";
+
 import video from "../assets/videoplayback.mp4";
 
 const Home = () => {
@@ -126,6 +128,30 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="playbig">
+        <div className="playbigtext">
+          <div>
+            {" "}
+            <h1>Play Big Win Big</h1>
+          </div>
+          <div>
+            <p>
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              et repudiandae ut minus corporis numquam assumenda provident quas?
+              Minima libero, ratione cum quas aut unde beatae repellat iure
+              impedit et. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Maiores quia error reprehenderit sit eligendi suscipit ullam
+              similique accusantium quasi, impedit debitis quas aliquid maxime
+              quos porro? Dolores quis ex voluptatibus.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img width={500} src={playbigwinbig} alt="" />
+        </div>
+      </div>
+
       <div
         style={{
           position: "relative",
@@ -149,7 +175,32 @@ const Home = () => {
             objectFit: "cover",
           }}
         />
-        <div className="textonvideo">Be The Last One Standing</div>
+        <div className="textonvideo">Be The Last One Standing In The Lobby</div>
+      </div>
+      <br />
+      <h1 id="footerh1">GET IN TOUCH WITH US</h1>
+
+      <div className="footer">
+        <div id="insta" className="footerelements">
+          <ion-icon name="logo-instagram"></ion-icon> Instagram
+        </div>
+        <div id="facebook" className="footerelements">
+          <ion-icon name="logo-facebook"></ion-icon> Facebook
+        </div>
+        <div id="youtube" className="footerelements">
+          <ion-icon name="logo-youtube"></ion-icon> Youtube
+        </div>
+        <div id="linkedin" className="footerelements">
+          <ion-icon name="logo-linkedin"></ion-icon> Linkedin
+        </div>
+        <div id="email" className="footerelements">
+          <ion-icon name="mail-outline"></ion-icon> Email
+        </div>
+      </div>
+
+      <div className="finalfooter">
+        {" "}
+        <p>2025@copyright.Esports-T1.com</p>
       </div>
     </section>
   );
