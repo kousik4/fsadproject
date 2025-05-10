@@ -11,7 +11,33 @@ import cod from "../assets/cod.png";
 import codbg from "../assets/codbg.png";
 import coc from "../assets/coc.png";
 import cocbg from "../assets/cocbg.png";
+import { useNavigate } from "react-router-dom";
+
 const Sports = () => {
+  const navigate = useNavigate();
+
+  const reg1 = () => {
+    navigate("/GameRegistration/Fortnite");
+  };
+  const reg2 = () => {
+    navigate("/GameRegistration/Freefire");
+  };
+
+  const reg3 = () => {
+    navigate("/GameRegistration/Pubg");
+  };
+
+  const reg4 = () => {
+    navigate("/GameRegistration/Valorant");
+  };
+
+  const reg5 = () => {
+    navigate("/GameRegistration/Callofduty");
+  };
+
+  const reg6 = () => {
+    navigate("/GameRegistration/Clashofclans");
+  };
   return (
     <section style={{ height: "100%", paddingTop: "8rem" }}>
       <h1 id="sphearderh1">Register Now</h1>
@@ -23,7 +49,6 @@ const Sports = () => {
           style={{ backgroundImage: `url(${fortnitezoomin})` }}
           className="games"
         >
-          {" "}
           <img className="imgs" src={fortnite} alt="" />
         </div>
 
@@ -38,22 +63,21 @@ const Sports = () => {
       </div>
 
       <div className="btnmain">
-        <button>Register Now</button>
-        <button>Register Now</button>
+        <button onClick={reg1}>Register Now</button>
+        <button onClick={reg2}>Register Now</button>
       </div>
 
       <div id="gamespardiv">
-        {/* div1 for fortnite */}
+        {/* div1 for pubg */}
         <div
           id="background"
           style={{ backgroundImage: `url(${pubgbgimg})` }}
           className="games"
         >
-          {" "}
           <img className="imgs" src={pubg} alt="" />
         </div>
 
-        {/* div2 for free fire */}
+        {/* div2 for valorant */}
         <div
           id="background"
           style={{ backgroundImage: `url(${valorantbg})` }}
@@ -64,22 +88,21 @@ const Sports = () => {
       </div>
 
       <div className="btnmain">
-        <button>Register Now</button>
-        <button>Register Now</button>
+        <button onClick={reg3}>Register Now</button>
+        <button onClick={reg4}>Register Now</button>
       </div>
 
       <div id="gamespardiv">
-        {/* div1 for fortnite */}
+        {/* div1 for cod */}
         <div
           id="background"
           style={{ backgroundImage: `url(${codbg})` }}
           className="games"
         >
-          {" "}
           <img className="imgs" src={cod} alt="" />
         </div>
 
-        {/* div2 for free fire */}
+        {/* div2 for coc */}
         <div
           id="background"
           style={{ backgroundImage: `url(${cocbg})` }}
@@ -90,8 +113,8 @@ const Sports = () => {
       </div>
 
       <div className="btnmain">
-        <button>Register Now</button>
-        <button>Register Now</button>
+        <button onClick={reg5}>Register Now</button>
+        <button onClick={reg6}>Register Now</button>
       </div>
 
       <h1 id="footerh1">GET IN TOUCH WITH US</h1>
@@ -115,7 +138,6 @@ const Sports = () => {
       </div>
 
       <div className="finalfooter">
-        {" "}
         <p>2025@copyright.Esports-T1.com</p>
       </div>
     </section>

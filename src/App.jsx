@@ -9,10 +9,21 @@ import Contactlayout from "./Layout/Contactlayout";
 import Contactinfo from "./components/Contactinfo";
 import Contactform from "./components/Contactform";
 import Pagenotfound from "./components/Pagenotfound";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Fortnite from "./GameRegestration/Fortnite";
+import Freefire from "./GameRegestration/Freefire";
+import Pubg from "./GameRegestration/Pubg";
+import Valorant from "./GameRegestration/Valorant";
+import Callofduty from "./GameRegestration/Callofduty";
+import Clashofclans from "./GameRegestration/Clashofclans";
+
+// 👇 Import UserProvider
+import { UserProvider } from "./UserContext";
 
 const App = () => {
   return (
-    <div>
+    <UserProvider>
       <Navbar />
       <div className="container">
         <Routes>
@@ -24,10 +35,21 @@ const App = () => {
             <Route path="info" element={<Contactinfo />} />
             <Route path="form" element={<Contactform />} />
           </Route>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="GameRegistration/Fortnite" element={<Fortnite />} />
+          <Route path="GameRegistration/Freefire" element={<Freefire />} />
+          <Route path="GameRegistration/Pubg" element={<Pubg />} />
+          <Route path="GameRegistration/Valorant" element={<Valorant />} />
+          <Route path="GameRegistration/Callofduty" element={<Callofduty />} />
+          <Route
+            path="GameRegistration/Clashofclans"
+            element={<Clashofclans />}
+          />
           <Route path="*" element={<Pagenotfound />} />
         </Routes>
       </div>
-    </div>
+    </UserProvider>
   );
 };
 
